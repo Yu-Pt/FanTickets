@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search">#D9D9D9</color>
+    <color name="purple_500">#5E92B3</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_200">#FF3700B3</color>
+    <color name="teal_200">#5E92B3</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_search_color">#4C4C4C</color>
+    <color name="text_log_in">#858585</color>
+    <color name="background_log_in">#DCDADA</color>
+    <color name="colorPrimaryDark">#5E92B3</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000FF</color>
+    <color name="green_1">#1F743C</color>
+    <color name="cool_red">#CE272F</color>
+    <color name="light_green">#EEF6EA</color>
+    <color name="fan_id_color">#125695</color>
+
+</resources>
+

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/header"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/athiti"
+                            android:text="@string/app_name"
+                            android:layout_marginTop="32sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="32sp" />
+
+                        <TextView
+                            android:id="@+id/mainpage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/athiti"
+                            android:text="@string/authorization"
+                            android:textAlignment="center"
+                            android:layout_marginTop="90sp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                                <Button
+                                    android:id="@+id/log_in"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="34dp"
+                                    android:layout_marginStart="50sp"
+                                    android:layout_marginTop="20sp"
+                                    android:background="@android:color/transparent"
+                                    android:text="@string/log_in"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/athiti_semibold"
+                                    android:textSize="12sp"
+                                    tools:ignore="SmallSp"
+                                    android:onClick="onClickToEnter"/>
+
+                                <TextView
+                                    android:id="@+id/slash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/athiti_semibold"
+                                    android:layout_marginTop="20sp"
+                                    android:textSize="20sp"
+                                    android:text="@string/slash" />
+
+                                <Button
+                                    android:id="@+id/registration"
+                                    android:layout_width="140dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="20sp"
+                                    android:fontFamily="@font/athiti_semibold"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="onClickToReg"
+                                    android:text="@string/registration"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="SmallSp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="50sp"
+                                    app:srcCompat="@drawable/ball"
+                                    android:layout_marginTop="25sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginStart="60sp"
+                    android:textColor="@color/text_log_in"
+                    android:textSize="12sp"
+                    android:text="@string/user_name"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="50sp"
+                            android:background="@drawable/gray_rectangle"/>
+
+                        <EditText
+                            android:id="@+id/edit_login"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="60sp"
+                            android:layout_marginEnd="60sp"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/repeat_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginStart="60sp"
+                    android:textColor="@color/text_log_in"
+                    android:textSize="12sp"
+                    android:text="@string/family"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="50sp"
+                            android:background="@drawable/gray_rectangle"/>
+
+                        <EditText
+                            android:id="@+id/edit_surname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="60sp"
+                            android:layout_marginEnd="60sp"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            tools:ignore="TextFields" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginStart="60sp"
+                    android:textColor="@color/text_log_in"
+                    android:textSize="12sp"
+                    android:text="@string/user_email"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="50sp"
+                            android:background="@drawable/gray_rectangle"/>
+
+                        <EditText
+                            android:id="@+id/edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="60sp"
+                            android:layout_marginEnd="60sp"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            tools:ignore="TextFields" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/user_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginStart="60sp"
+                    android:textColor="@color/text_log_in"
+                    android:textSize="12sp"
+                    android:text="@string/password"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="50sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginEnd="50sp"
+                            android:background="@drawable/gray_rectangle"/>
+
+                        <EditText
+                            android:id="@+id/edit_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginStart="60sp"
+                            android:layout_marginEnd="60sp"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            tools:ignore="TextFields" />
+
+                </FrameLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="40sp"
+                    android:text="Я согласен с политикой конфиденциальности" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/login_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_marginTop="40sp"
+                            android:layout_gravity="center_horizontal"
+                            app:srcCompat="@drawable/fonmatch"
+                            android:onClick="onClickSaveBD"/>
+                        <TextView
+                            android:id="@+id/login_button_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/athiti_semibold"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="51sp"
+                            android:text="@string/registration" />
+
+                </FrameLayout>
+
+                <include layout="@layout/footer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+</ScrollView>

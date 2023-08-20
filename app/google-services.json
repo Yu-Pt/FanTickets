@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "634295783039",
+    "firebase_url": "https://fantickets-bfd4c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fantickets-bfd4c",
+    "storage_bucket": "fantickets-bfd4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634295783039:android:a7010bef106c7c1a0e394a",
+        "android_client_info": {
+          "package_name": "com.example.fantickets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634295783039-29072cdmsb2dn20mdqht3drbobedhq59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8kcMxrN_79w5CNL5a26-FvDu5pVty_ZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634295783039-29072cdmsb2dn20mdqht3drbobedhq59.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

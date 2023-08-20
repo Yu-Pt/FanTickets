@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMatchesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Мои матчи"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Завершенные матчи:"
+                android:layout_marginTop="20sp"
+                android:textSize="20sp"
+                android:layout_marginStart="10sp"
+                android:textColor="@color/black"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="90sp"
+                    app:srcCompat="@drawable/hand_left"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/light_green_rectangle_2" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp">
+
+                        <ImageView
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            app:srcCompat="@drawable/cska"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100sp"
+                            android:textSize="60sp"
+                            android:textColor="@color/black"
+                            android:text="2 : 1" />
+
+                        <ImageView
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            app:srcCompat="@drawable/spartak"
+                            android:layout_marginStart="240sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ЦСКА - Спартак"
+                    android:layout_marginTop="100sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140sp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/green_1"
+                            android:text="10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25sp"
+                            android:textSize="16sp"
+                            android:textColor="@color/green_1"
+                            android:text="Декабря," />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100sp"
+                            android:textColor="@color/green_1"
+                            android:textSize="16sp"
+                            android:text="14:00,"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150sp"
+                        android:textColor="@color/green_1"
+                        android:textSize="16sp"
+                        android:text="Матч завершен"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170sp"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/light_green_rectangle_2" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp">
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        app:srcCompat="@drawable/cska"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100sp"
+                        android:textSize="60sp"
+                        android:textColor="@color/black"
+                        android:text="1 : 1" />
+
+                    <ImageView
+                        android:layout_width="70sp"
+                        android:layout_height="70sp"
+                        app:srcCompat="@drawable/dinamo"
+                        android:layout_marginStart="240sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ЦСКА - Динамо"
+                    android:layout_marginTop="100sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/green_1"
+                        android:text="6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:textSize="16sp"
+                        android:textColor="@color/green_1"
+                        android:text="Декабря," />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100sp"
+                        android:textColor="@color/green_1"
+                        android:textSize="16sp"
+                        android:text="21:00,"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="150sp"
+                        android:textColor="@color/green_1"
+                        android:textSize="16sp"
+                        android:text="Матч завершен"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

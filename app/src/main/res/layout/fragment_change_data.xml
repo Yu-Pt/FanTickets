@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeDataFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Мои данные"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="320sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/my_data_rectangle"
+                    android:elevation="5sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30sp"
+                    />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imageChangeProfileMdata"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:elevation="5sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_oval="true" />
+
+                <View
+                    android:id="@+id/viewSupporter"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintBottom_toBottomOf="@id/imageProfile"
+                    app:layout_constraintEnd_toEndOf="@id/imageProfile"
+                    app:layout_constraintStart_toStartOf="@id/imageProfile"
+                    app:layout_constraintTop_toTopOf="@id/imageProfile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Имя:"
+                    android:fontFamily="@font/athiti"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:elevation="5sp"
+                    android:layout_marginTop="140sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="50sp"/>
+
+                <EditText
+                    android:id="@+id/changeFIO1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginEnd="50sp"
+                    android:elevation="5sp"
+                    android:layout_marginTop="130sp"
+                    android:fontFamily="@font/athiti"
+                    android:textColor="@color/text_search_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/viewSupporter"
+                    app:layout_constraintStart_toEndOf="@id/imageProfile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Фамилия: "
+                    android:fontFamily="@font/athiti"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:elevation="5sp"
+                    android:layout_marginTop="180sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="50sp"/>
+
+                <EditText
+                    android:id="@+id/changeFIO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginEnd="50sp"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="170sp"
+                    android:elevation="5sp"
+                    android:textColor="@color/text_search_color"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/viewSupporter"
+                    app:layout_constraintStart_toEndOf="@id/FIO1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:elevation="5sp"
+                    android:layout_marginTop="220sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="50sp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Дата рождения:" />
+
+                <EditText
+                    android:id="@+id/changedatabirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginEnd="50sp"
+                    android:fontFamily="@font/athiti"
+                    android:elevation="5sp"
+                    android:layout_marginTop="210sp"
+                    android:textColor="@color/text_search_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="260sp"
+                    android:layout_marginStart="50sp"
+                    android:elevation="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Паспорт:" />
+
+                <EditText
+                    android:id="@+id/changedocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginEnd="50sp"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="250sp"
+                    android:elevation="5sp"
+                    android:textColor="@color/text_search_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="300sp"
+                    android:layout_marginStart="50sp"
+                    android:elevation="5sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="Пол: " />
+
+                <EditText
+                    android:id="@+id/changegender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginEnd="50sp"
+                    android:fontFamily="@font/athiti"
+                    android:layout_marginTop="290sp"
+                    android:elevation="5sp"
+                    android:textColor="@color/text_search_color"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/button_save_changes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/green_1"
+                android:textSize="12sp"
+                android:fontFamily="@font/athiti"
+                android:text="@string/save" />
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="bottom"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

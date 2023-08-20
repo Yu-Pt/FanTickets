@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyTicketsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Мои билеты"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+
+                <ImageView
+                    android:id="@+id/ticket1"
+                    android:layout_width="match_parent"
+                    android:layout_height="175sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/invisfon" />
+
+                <TextView
+                    android:id="@+id/resh1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="45sp"
+                    android:elevation="5sp"
+                    android:visibility="invisible"
+                    android:text="#"/>
+
+                <TextView
+                    android:id="@+id/number1ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="55sp"
+                    android:elevation="5sp"
+                    android:text="Билетов нет"/>
+
+                <TextView
+                    android:id="@+id/date1ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="35sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/time1ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="53sp"
+                    android:text=" "/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70sp">
+
+                    <TextView
+                        android:id="@+id/club11ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                    <TextView
+                        android:id="@+id/tire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/club21ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/stadium1ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/text1ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/cool_red"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="125sp"
+                    android:text=" "/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+
+                <ImageView
+                    android:id="@+id/ticket2"
+                    android:layout_width="match_parent"
+                    android:layout_height="175sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/invisfon" />
+
+                <TextView
+                    android:id="@+id/resh2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="45sp"
+                    android:elevation="5sp"
+                    android:visibility="invisible"
+                    android:text="#"/>
+
+                <TextView
+                    android:id="@+id/number2ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="55sp"
+                    android:elevation="5sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/date2ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="35sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/time2ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="53sp"
+                    android:text=" "/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70sp">
+
+                    <TextView
+                        android:id="@+id/club12ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                    <TextView
+                        android:id="@+id/tire2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/club22ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/stadium2ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/text2ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/cool_red"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="125sp"
+                    android:text=" "/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp">
+
+                <ImageView
+                    android:id="@+id/ticket3"
+                    android:layout_width="match_parent"
+                    android:layout_height="175sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/invisfon" />
+
+                <TextView
+                    android:id="@+id/number3ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="55sp"
+                    android:elevation="5sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/resh3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_marginTop="35sp"
+                    android:layout_marginStart="45sp"
+                    android:elevation="5sp"
+                    android:visibility="invisible"
+                    android:text="#"/>
+
+                <TextView
+                    android:id="@+id/date3ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="35sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/time3ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/green_1"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="45sp"
+                    android:layout_marginTop="53sp"
+                    android:text=" "/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70sp">
+
+                    <TextView
+                        android:id="@+id/club13ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                    <TextView
+                        android:id="@+id/tire3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:id="@+id/club23ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text=" "/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/stadium3ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100sp"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/text3ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/cool_red"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="125sp"
+                    android:text=" "/>
+
+            </FrameLayout>
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="bottom"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainPageFragment"
+        android:icon="@drawable/home"
+        android:title="Главная"/>
+    <item
+        android:id="@+id/buyTicketsFragment"
+        android:icon="@drawable/tickets"
+        android:title="Купить билет"/>
+    <item
+        android:id="@+id/calendarFragment"
+        android:icon="@drawable/calendar"
+        android:title="Календарь матчей"/>
+    <item
+        android:id="@+id/personalAccountFragment"
+        android:icon="@drawable/personal_account"
+        android:title="Личный кабинет"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="Настройки"/>
+</menu>

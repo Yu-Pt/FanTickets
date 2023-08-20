@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.fantickets.MainPageFragment"
+        android:label="Main Page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_match15decFragment"
+            app:destination="@id/match15decFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_match18decFragment"
+            app:destination="@id/match18decFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_match20decFragment"
+            app:destination="@id/match20decFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/buyTicketsFragment"
+        android:name="com.example.fantickets.BuyTicketsFragment"
+        android:label="Buy Tickets"
+        tools:layout="@layout/fragment_buy_tickets" >
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match15decFragment"
+            app:destination="@id/match15decFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match14janFragment"
+            app:destination="@id/match14janFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match18decFragment"
+            app:destination="@id/match18decFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match19janFragment"
+            app:destination="@id/match19janFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match20decFragment"
+            app:destination="@id/match20decFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match24decFragment"
+            app:destination="@id/match24decFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match28decFragment"
+            app:destination="@id/match28decFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match28janFragment"
+            app:destination="@id/match28janFragment" />
+        <action
+            android:id="@+id/action_buyTicketsFragment_to_match9janFragment"
+            app:destination="@id/match9janFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.fantickets.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_match15decFragment"
+            app:destination="@id/match15decFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_match18decFragment"
+            app:destination="@id/match18decFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_match20decFragment"
+            app:destination="@id/match20decFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_match24decFragment"
+            app:destination="@id/match24decFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_match28decFragment"
+            app:destination="@id/match28decFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_calendarFragmentJanuary"
+            app:destination="@id/calendarFragmentJanuary" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalAccountFragment"
+        android:name="com.example.fantickets.PersonalAccountFragment"
+        android:label="Personal Acccount"
+        tools:layout="@layout/fragment_personal_account" >
+        <action
+            android:id="@+id/action_personalAccountFragment_to_myTicketsFragment"
+            app:destination="@id/myTicketsFragment" />
+        <action
+            android:id="@+id/action_personalAccountFragment_to_myFanIDFragment"
+            app:destination="@id/myFanIDFragment" />
+        <action
+            android:id="@+id/action_personalAccountFragment_to_myMatchesFragment"
+            app:destination="@id/myMatchesFragment" />
+        <action
+            android:id="@+id/action_personalAccountFragment_to_myDataFragment"
+            app:destination="@id/myDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.fantickets.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/myTicketsFragment"
+        android:name="com.example.fantickets.MyTicketsFragment"
+        android:label="fragment_my_tickets"
+        tools:layout="@layout/fragment_my_tickets" >
+        <action
+            android:id="@+id/action_myTicketsFragment_to_ticket1Fragment"
+            app:destination="@id/ticket1Fragment" />
+        <action
+            android:id="@+id/action_myTicketsFragment_to_ticket2Fragment"
+            app:destination="@id/ticket2Fragment" />
+        <action
+            android:id="@+id/action_myTicketsFragment_to_ticket3Fragment"
+            app:destination="@id/ticket3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFanIDFragment"
+        android:name="com.example.fantickets.MyFanIDFragment"
+        android:label="fragment_my_fan_i_d"
+        tools:layout="@layout/fragment_my_fan_i_d" />
+    <fragment
+        android:id="@+id/myMatchesFragment"
+        android:name="com.example.fantickets.MyMatchesFragment"
+        android:label="fragment_my_matches"
+        tools:layout="@layout/fragment_my_matches" />
+    <fragment
+        android:id="@+id/myDataFragment"
+        android:name="com.example.fantickets.MyDataFragment"
+        android:label="fragment_my_data"
+        tools:layout="@layout/fragment_my_data" >
+        <action
+            android:id="@+id/action_myDataFragment_to_changeDataFragment"
+            app:destination="@id/changeDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeDataFragment"
+        android:name="com.example.fantickets.ChangeDataFragment"
+        android:label="fragment_change_data"
+        tools:layout="@layout/fragment_change_data" />
+    <fragment
+        android:id="@+id/match15decFragment"
+        android:name="com.example.fantickets.Match15decFragment"
+        android:label="fragment_match15dec"
+        tools:layout="@layout/fragment_match15dec" />
+    <fragment
+        android:id="@+id/match14janFragment"
+        android:name="com.example.fantickets.Match14janFragment"
+        android:label="fragment_match14jan"
+        tools:layout="@layout/fragment_match14jan" />
+    <fragment
+        android:id="@+id/match18decFragment"
+        android:name="com.example.fantickets.Match18decFragment"
+        android:label="fragment_match18dec"
+        tools:layout="@layout/fragment_match18dec" />
+    <fragment
+        android:id="@+id/match19janFragment"
+        android:name="com.example.fantickets.Match19janFragment"
+        android:label="fragment_match19jan"
+        tools:layout="@layout/fragment_match19jan" />
+    <fragment
+        android:id="@+id/match20decFragment"
+        android:name="com.example.fantickets.Match20decFragment"
+        android:label="fragment_match20dec"
+        tools:layout="@layout/fragment_match20dec" />
+    <fragment
+        android:id="@+id/match24decFragment"
+        android:name="com.example.fantickets.Match24decFragment"
+        android:label="fragment_match24dec"
+        tools:layout="@layout/fragment_match24dec" />
+    <fragment
+        android:id="@+id/match28decFragment"
+        android:name="com.example.fantickets.Match28decFragment"
+        android:label="fragment_match28dec"
+        tools:layout="@layout/fragment_match28dec" />
+    <fragment
+        android:id="@+id/match28janFragment"
+        android:name="com.example.fantickets.Match28janFragment"
+        android:label="fragment_match28jan"
+        tools:layout="@layout/fragment_match28jan" />
+    <fragment
+        android:id="@+id/match9janFragment"
+        android:name="com.example.fantickets.Match9janFragment"
+        android:label="fragment_match9jan"
+        tools:layout="@layout/fragment_match9jan" />
+    <fragment
+        android:id="@+id/ticket1Fragment"
+        android:name="com.example.fantickets.Ticket1Fragment"
+        android:label="fragment_ticket1"
+        tools:layout="@layout/fragment_ticket1" />
+    <fragment
+        android:id="@+id/ticket2Fragment"
+        android:name="com.example.fantickets.Ticket2Fragment"
+        android:label="fragment_ticket2"
+        tools:layout="@layout/fragment_ticket2" />
+    <fragment
+        android:id="@+id/ticket3Fragment"
+        android:name="com.example.fantickets.Ticket3Fragment"
+        android:label="fragment_ticket3"
+        tools:layout="@layout/fragment_ticket3" />
+    <fragment
+        android:id="@+id/calendarFragmentJanuary"
+        android:name="com.example.fantickets.CalendarFragmentJanuary"
+        android:label="fragment_calendar_january"
+        tools:layout="@layout/fragment_calendar_january" >
+        <action
+            android:id="@+id/action_calendarFragmentJanuary_to_match14janFragment"
+            app:destination="@id/match14janFragment" />
+        <action
+            android:id="@+id/action_calendarFragmentJanuary_to_match19janFragment"
+            app:destination="@id/match19janFragment" />
+        <action
+            android:id="@+id/action_calendarFragmentJanuary_to_match28janFragment"
+            app:destination="@id/match28janFragment" />
+        <action
+            android:id="@+id/action_calendarFragmentJanuary_to_match9janFragment"
+            app:destination="@id/match9janFragment" />
+        <action
+            android:id="@+id/action_calendarFragmentJanuary_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+
+</navigation>

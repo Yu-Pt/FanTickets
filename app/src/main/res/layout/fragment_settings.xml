@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Настройки"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Уведомления"
+                    android:layout_marginStart="30sp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="170sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/my_data_rectangle"
+                    android:elevation="5sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="55sp"
+                    app:srcCompat="@drawable/bell"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Уведомления"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="57sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:elevation="5sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="45sp"
+                    app:srcCompat="@drawable/toggle"
+                    app:tint="@color/green_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:elevation="5sp"
+                    android:background="@color/light_green"
+                    android:layout_marginTop="95sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="110sp"
+                    app:srcCompat="@drawable/sound"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Звук уведомлений"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="112sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="45sp"
+                    android:layout_height="45sp"
+                    android:elevation="5sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="102sp"
+                    app:srcCompat="@drawable/toggle2"
+                    app:tint="@color/green_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="152sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="167sp"
+                    app:srcCompat="@drawable/time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Время уведомлений"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="169sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_1"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="169sp"
+                    android:elevation="5sp"
+                    android:textSize="16sp"
+                    android:text="12:00"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5sp"
+                android:text="Внешний вид"
+                android:layout_marginStart="30sp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="170sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@drawable/my_data_rectangle"
+                android:elevation="5sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="55sp"
+                    app:srcCompat="@drawable/theme"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Тема приложения"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="57sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:elevation="5sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="57sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/green_1"
+                    android:text="Светлая" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="95sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="110sp"
+                    app:srcCompat="@drawable/translate"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Язык"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="112sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:elevation="5sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="112sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/green_1"
+                    android:text="Русский" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="150sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="165sp"
+                    app:srcCompat="@drawable/text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Размер шрифта"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="167sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45sp"
+                    android:elevation="5sp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="40sp"
+                    android:layout_marginTop="167sp"
+                    android:textSize="16sp"
+                    android:textColor="@color/green_1"
+                    android:text="16" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="150sp"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Помощь"
+                    android:layout_marginStart="30sp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="170sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:background="@drawable/my_data_rectangle"
+                    android:elevation="5sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="55sp"
+                    app:srcCompat="@drawable/replyemail"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Задать вопрос"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="57sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="95sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="110sp"
+                    app:srcCompat="@drawable/question2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Вопросы о приложении"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="112sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3sp"
+                    android:layout_marginStart="40sp"
+                    android:layout_marginEnd="40sp"
+                    app:srcCompat="@drawable/light_green_line"
+                    android:background="@color/light_green"
+                    android:elevation="5sp"
+                    android:layout_marginTop="150sp"/>
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:elevation="5sp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="35sp"
+                    android:layout_marginTop="165sp"
+                    app:srcCompat="@drawable/security_safe"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5sp"
+                    android:text="Политика конфиденциальности"
+                    android:layout_marginStart="75sp"
+                    android:layout_marginTop="167sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+            </FrameLayout>
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFanIDFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Мой FanID"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="530sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/fan_id_png"
+                    android:layout_width="300sp"
+                    android:layout_height="400sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fan_id_2"
+                    android:layout_gravity="center_horizontal"/>
+
+                <ImageView
+                    android:id="@+id/fanid_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="240sp"
+                    android:src="@drawable/avatar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80sp"/>
+
+                <TextView
+                    android:id="@+id/fanid_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="340sp"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/fan_id_line"
+                    android:layout_marginTop="400sp"/>
+
+                <ImageView
+                    android:id="@+id/fanid_image_code"
+                    android:layout_width="290sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="400sp"
+                    android:src="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/fanid_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="460sp"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:text="TextView" />
+
+            </FrameLayout>
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

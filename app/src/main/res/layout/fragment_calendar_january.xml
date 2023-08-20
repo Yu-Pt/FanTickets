@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarFragmentJanuary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/header"
+                    tools:ignore="ImageContrastCheck" />
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="32sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/athiti"
+                    android:text="Календарь матчей"
+                    android:textAlignment="center"
+                    android:layout_marginTop="90sp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10sp">
+
+                <ImageButton
+                    android:id="@+id/toDec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/arrow_left"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Январь"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green_1"
+                    android:layout_weight="2"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/arrow_right"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Пн"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вт"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ср"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Чт"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Пт"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Сб"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Вс"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:id="@+id/calendar_to9jan"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/green_oval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:id="@+id/calendar_to14jan"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/green_oval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="17"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:id="@+id/calendar_to19jan"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/green_oval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="26"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="27"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:id="@+id/calendar_to28jan"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/green_oval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="5sp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="45sp"
+                    android:layout_height="45sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/calendar_text_jan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginEnd="20sp"
+                    android:fontFamily="@font/athiti"
+                    android:text="@string/big_text" />
+
+                <FrameLayout
+                    android:id="@+id/calendar_frame_jan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="invisible"
+                    android:layout_marginTop="20sp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="155sp"
+                        android:layout_marginTop="10sp">
+
+                        <ImageView
+                            android:id="@+id/calendar_match_jan"
+                            android:layout_width="match_parent"
+                            android:layout_height="170sp"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/fonosnov" />
+
+                        <TextView
+                            android:id="@+id/calendar_date_jan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginTop="20sp"
+                            android:textSize="55sp"
+                            android:textColor="@color/green_1"
+                            android:text="@string/probel" />
+
+                        <TextView
+                            android:id="@+id/calendar_month_jan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="85sp"
+                            android:layout_marginStart="25sp"
+                            android:textSize="16sp"
+                            android:textColor="@color/green_1"
+                            android:text="@string/probel" />
+
+                        <TextView
+                            android:id="@+id/calendar_time_jan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="35sp"
+                            android:layout_marginTop="110sp"
+                            android:textColor="@color/green_1"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:text="@string/probel"/>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginStart="110sp"
+                            android:layout_marginEnd="10sp">
+
+                            <FrameLayout
+                                android:layout_width="90sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start">
+
+                                <ImageView
+                                    android:id="@+id/calendar_image1_jan"
+                                    android:layout_width="60sp"
+                                    android:layout_height="60sp"
+                                    app:srcCompat="@drawable/zenit"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="35sp"/>
+
+                                <TextView
+                                    android:id="@+id/calendar_club1_jan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="92sp"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/probel" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/cool_red"
+                                android:text="VS" />
+
+                            <FrameLayout
+                                android:layout_width="90sp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end">
+
+                                <ImageView
+                                    android:id="@+id/calendar_image2_jan"
+                                    android:layout_width="60sp"
+                                    android:layout_height="60sp"
+                                    app:srcCompat="@drawable/zenit"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="35sp"/>
+
+                                <TextView
+                                    android:id="@+id/calendar_club2_jan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="92sp"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/probel" />
+
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/calendar_stadium_jan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="125sp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="10sp"
+                                android:textSize="14sp"
+                                android:textColor="@color/gray"
+                                android:text="@string/probel" />
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="200sp">
+
+                        <TextView
+                            android:layout_width="150sp"
+                            android:layout_height="40sp"
+                            android:background="@drawable/red_button"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <Button
+                            android:id="@+id/calendar_buy_jan"
+                            android:layout_width="150sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/athiti_semibold"
+                            android:text="Купить билет"
+                            android:textSize="10sp" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
